@@ -536,59 +536,308 @@ public class Student {
         switch (n){
 
             case 1:
-                List l = readFileInList("root1Bus.txt");
+                System.out.println("\n\n\n\t\t\t===Select time===");
+                System.out.println("1. 8.00 am");
+                System.out.println("2. 9.00 am");
+                System.out.println("3. 10.00 am");
+                System.out.println("4. 11.00 am");
+                System.out.println("5. 12.45 pm");
+                System.out.println("6. Go back.");
+                System.out.println("-----------------------");
+                System.out.print("Choose your option: ");
+                int p1 = input.nextInt();
 
-                Iterator<String> itr1 = l.iterator();
-                while (itr1.hasNext())
-                    System.out.println("\n\n"+itr1.next());
-                System.out.print("\n\nEnter 1 to go back: ");
-                int b = input.nextInt();
-                if(b==1){seatvacant();}
-                break;
+                switch (p1){
+                    case 1:
+                        List l = readFileInList("route1/8am.txt");
 
+                        Iterator<String> itr1 = l.iterator();
+                        while (itr1.hasNext())
+                            System.out.println("\n\n"+itr1.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int b = input.nextInt();
+                        if(b==1){seatvacant();}
+                        break;
+
+                    case 2:
+                        List k = readFileInList("route1/9am.txt");
+
+                        Iterator<String> itr2 = k.iterator();
+                        while (itr2.hasNext())
+                            System.out.println("\n\n"+itr2.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int c = input.nextInt();
+                        if(c==1){seatvacant();}
+                        break;
+
+                    case 3:
+                        List m = readFileInList("route1/10am.txt");
+
+                        Iterator<String> itr3 = m.iterator();
+                        while (itr3.hasNext())
+                            System.out.println("\n\n"+itr3.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int d = input.nextInt();
+                        if(d==1){seatvacant();}
+                        break;
+
+                    case 4:
+                        List o = readFileInList("route1/11am.txt");
+
+                        Iterator<String> itr4 = o.iterator();
+                        while (itr4.hasNext())
+                            System.out.println("\n\n"+itr4.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int f = input.nextInt();
+                        if(f==1){seatvacant();}
+                        break;
+
+                    case 5:
+                        List q = readFileInList("route1/12.45pm.txt");
+
+                        Iterator<String> itr5 = q.iterator();
+                        while (itr5.hasNext())
+                            System.out.println("\n\n"+itr5.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int g = input.nextInt();
+                        if(g==1){seatvacant();}
+                        break;
+
+                    case 6:
+                        seatvacant();
+                        break;
+                }
+
+             //for route two
             case 2:
-                List k = readFileInList("root2Bus.txt");
+                System.out.println("\n\n\n\t\t\t===Select time===");
+                System.out.println("1. 8.00 am");
+                System.out.println("2. 9.00 am");
+                System.out.println("3. 10.00 am");
+                System.out.println("4. 11.00 am");
+                System.out.println("5. 12.45 pm");
+                System.out.println("6. Go back.");
+                System.out.println("-----------------------");
+                System.out.print("Choose your option: ");
+                int p2 = input.nextInt();
 
-                Iterator<String> itr2 = k.iterator();
-                while (itr2.hasNext())
-                    System.out.println("\n\n"+itr2.next());
-                System.out.print("\n\nEnter 1 to go back: ");
-                int c = input.nextInt();
-                if(c==1){seatvacant();}
-                break;
+                switch (p2){
+                    case 1:
+                        List l = readFileInList("route2/8am.txt");
 
+                        Iterator<String> itr1 = l.iterator();
+                        while (itr1.hasNext())
+                            System.out.println("\n\n"+itr1.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int b = input.nextInt();
+                        if(b==1){seatvacant();}
+                        break;
+
+                    case 2:
+                        List k = readFileInList("route2/9am.txt");
+
+                        Iterator<String> itr2 = k.iterator();
+                        while (itr2.hasNext())
+                            System.out.println("\n\n"+itr2.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int c = input.nextInt();
+                        if(c==1){seatvacant();}
+                        break;
+
+                    case 3:
+                        List m = readFileInList("route2/10am.txt");
+
+                        Iterator<String> itr3 = m.iterator();
+                        while (itr3.hasNext())
+                            System.out.println("\n\n"+itr3.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int d = input.nextInt();
+                        if(d==1){seatvacant();}
+                        break;
+
+                    case 4:
+                        List o = readFileInList("route2/11am.txt");
+
+                        Iterator<String> itr4 = o.iterator();
+                        while (itr4.hasNext())
+                            System.out.println("\n\n"+itr4.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int f = input.nextInt();
+                        if(f==1){seatvacant();}
+                        break;
+
+                    case 5:
+                        List q = readFileInList("route2/12.45pm.txt");
+
+                        Iterator<String> itr5 = q.iterator();
+                        while (itr5.hasNext())
+                            System.out.println("\n\n"+itr5.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int g = input.nextInt();
+                        if(g==1){seatvacant();}
+                        break;
+
+                    case 6:
+                        seatvacant();
+                        break;
+                }
+
+            //for route three
             case 3:
-                List m = readFileInList("root3Bus.txt");
+                System.out.println("\n\n\n\t\t\t===Select time===");
+                System.out.println("1. 8.00 am");
+                System.out.println("2. 9.00 am");
+                System.out.println("3. 10.00 am");
+                System.out.println("4. 11.00 am");
+                System.out.println("5. 12.45 pm");
+                System.out.println("6. Go back.");
+                System.out.println("-----------------------");
+                System.out.print("Choose your option: ");
+                int p3 = input.nextInt();
 
-                Iterator<String> itr3 = m.iterator();
-                while (itr3.hasNext())
-                    System.out.println("\n\n"+itr3.next());
-                System.out.print("\n\nEnter 1 to go back: ");
-                int d = input.nextInt();
-                if(d==1){seatvacant();}
-                break;
+                switch (p3){
+                    case 1:
+                        List l = readFileInList("route3/8am.txt");
 
+                        Iterator<String> itr1 = l.iterator();
+                        while (itr1.hasNext())
+                            System.out.println("\n\n"+itr1.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int b = input.nextInt();
+                        if(b==1){seatvacant();}
+                        break;
+
+                    case 2:
+                        List k = readFileInList("route3/9am.txt");
+
+                        Iterator<String> itr2 = k.iterator();
+                        while (itr2.hasNext())
+                            System.out.println("\n\n"+itr2.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int c = input.nextInt();
+                        if(c==1){seatvacant();}
+                        break;
+
+                    case 3:
+                        List m = readFileInList("route3/10am.txt");
+
+                        Iterator<String> itr3 = m.iterator();
+                        while (itr3.hasNext())
+                            System.out.println("\n\n"+itr3.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int d = input.nextInt();
+                        if(d==1){seatvacant();}
+                        break;
+
+                    case 4:
+                        List o = readFileInList("route3/11am.txt");
+
+                        Iterator<String> itr4 = o.iterator();
+                        while (itr4.hasNext())
+                            System.out.println("\n\n"+itr4.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int f = input.nextInt();
+                        if(f==1){seatvacant();}
+                        break;
+
+                    case 5:
+                        List q = readFileInList("route3/12.45pm.txt");
+
+                        Iterator<String> itr5 = q.iterator();
+                        while (itr5.hasNext())
+                            System.out.println("\n\n"+itr5.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int g = input.nextInt();
+                        if(g==1){seatvacant();}
+                        break;
+
+                    case 6:
+                        seatvacant();
+                        break;
+                }
+
+            //for route four
             case 4:
-                List o = readFileInList("root4Bus.txt");
+                System.out.println("\n\n\n\t\t\t===Select time===");
+                System.out.println("1. 8.00 am");
+                System.out.println("2. 9.00 am");
+                System.out.println("3. 10.00 am");
+                System.out.println("4. 11.00 am");
+                System.out.println("5. 12.45 pm");
+                System.out.println("6. Go back.");
+                System.out.println("-----------------------");
+                System.out.print("Choose your option: ");
+                int p4 = input.nextInt();
 
-                Iterator<String> itr4 = o.iterator();
-                while (itr4.hasNext())
-                    System.out.println("\n\n"+itr4.next());
-                System.out.print("\n\nEnter 1 to go back: ");
-                int f = input.nextInt();
-                if(f==1){seatvacant();}
-                break;
+                switch (p4){
+                    case 1:
+                        List l = readFileInList("route4/8am.txt");
+
+                        Iterator<String> itr1 = l.iterator();
+                        while (itr1.hasNext())
+                            System.out.println("\n\n"+itr1.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int b = input.nextInt();
+                        if(b==1){seatvacant();}
+                        break;
+
+                    case 2:
+                        List k = readFileInList("route4/9am.txt");
+
+                        Iterator<String> itr2 = k.iterator();
+                        while (itr2.hasNext())
+                            System.out.println("\n\n"+itr2.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int c = input.nextInt();
+                        if(c==1){seatvacant();}
+                        break;
+
+                    case 3:
+                        List m = readFileInList("route4/10am.txt");
+
+                        Iterator<String> itr3 = m.iterator();
+                        while (itr3.hasNext())
+                            System.out.println("\n\n"+itr3.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int d = input.nextInt();
+                        if(d==1){seatvacant();}
+                        break;
+
+                    case 4:
+                        List o = readFileInList("route4/11am.txt");
+
+                        Iterator<String> itr4 = o.iterator();
+                        while (itr4.hasNext())
+                            System.out.println("\n\n"+itr4.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int f = input.nextInt();
+                        if(f==1){seatvacant();}
+                        break;
+
+                    case 5:
+                        List q = readFileInList("route4/12.45pm.txt");
+
+                        Iterator<String> itr5 = q.iterator();
+                        while (itr5.hasNext())
+                            System.out.println("\n\n"+itr5.next());
+                        System.out.print("\n\nEnter 1 to go back: ");
+                        int g = input.nextInt();
+                        if(g==1){seatvacant();}
+                        break;
+
+                    case 6:
+                        seatvacant();
+                        break;
+                }
+
 
             case 5:
-                try{student();}
-                catch (IOException e) {
-                    System.out.println("exception occoured" + e);
-                }
-                break;
+                seatBooking();
+
         }
     }
 
-
+//method for read file.
     public static List<String> readFileInList(String fileName)
     {
 
