@@ -186,8 +186,9 @@ public class Student {
         System.out.println("2. Route 2");
         System.out.println("3. Route 3");
         System.out.println("4. Route 4");
-        System.out.println("5. See seat vaccancy");
-        System.out.println("6. Go back");
+        System.out.println("5. Off schedule reservation.");
+        System.out.println("6. See seat vaccancy");
+        System.out.println("7. Go back");
         System.out.println("------------------------");
         System.out.print("Choose your option: ");
         Scanner input = new Scanner(System.in);
@@ -504,13 +505,31 @@ public class Student {
                 }
                 break;
 
-
             case 5:
+                System.out.print("\n\n\nEnter your student id: ");
+                int p1 = input.nextInt();
+                System.out.print("Enter Time: ");
+                int s1 = input.nextInt();
+                System.out.print("\nEnter route no. : ");
+                int s2 = input.nextInt();
+
+                try{ BufferedWriter out = new BufferedWriter(new FileWriter("offschedule.txt", true));
+                    out.write("ID: "+p1 +"\tTime"+s1+"\tRoute: "+s2+ "\n");
+                    out.close();
+                    System.out.println("\n\nReserved successfully.\nPress 1 to go back: ");
+                    int p = input.nextInt();
+                    if (p==1){seatBooking();}
+                } catch (IOException e) {
+                    System.out.println("exception occoured" + e);
+                }
+
+                break;
+            case 6:
                 seatvacant();
                 break;
 
 
-            case 6:
+            case 7:
                 try{student();}
                 catch (IOException e) {
                     System.out.println("exception occoured" + e);
