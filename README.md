@@ -1,2 +1,2 @@
 # LuBusReservation
-This a project about bus reservation. Where we solved issues related bus reservation of leading university. 
+This project is about seat reservation for bus. Where we solved issues related seat reservation of bus in leading university. 
